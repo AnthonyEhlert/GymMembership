@@ -17,7 +17,7 @@ import model.MemberName;
 public class TestMemberName {
 	MemberName memberMemo = new MemberName();
 	GymMember gymMember = new GymMember("Tim", "White");
-	
+
 	@Before
 	public void setUp() throws Exception {
 	}
@@ -27,7 +27,7 @@ public class TestMemberName {
 		String fullName = "Tim White";
 		assertEquals(fullName, memberMemo.createFullName(gymMember));
 	}
-	
+
 	@Test
 	public void testWelcomeMessage() {
 		String welcomeMessage = "Welcome Tim";

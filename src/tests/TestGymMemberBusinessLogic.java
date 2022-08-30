@@ -17,7 +17,7 @@ public class TestGymMemberBusinessLogic {
 
 	GymMemberBusinessLogic gymMemberBL = new GymMemberBusinessLogic();
 	GymMember gymMember = new GymMember("Mary", "White");
-	
+
 	@Before
 	public void setUp() throws Exception {
 	}
@@ -27,13 +27,13 @@ public class TestGymMemberBusinessLogic {
 		gymMember.setAge(17);
 		assertTrue(gymMemberBL.isMinor(gymMember));
 	}
-	
+
 	@Test
 	public void testIsMinor_False() {
 		gymMember.setAge(18);
 		assertFalse(gymMemberBL.isMinor(gymMember));
 	}
-	
+
 	@Test
 	public void testConvertToKilos() {
 		gymMember.setMaxBackSquat(325);

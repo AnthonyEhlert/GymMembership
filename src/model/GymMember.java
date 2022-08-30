@@ -11,15 +11,15 @@ public class GymMember {
 	private String lastName;
 	private int age;
 	private double maxBackSquat;
-	
-	public GymMember () {
+
+	public GymMember() {
 		super();
 	}
-	
-	public GymMember (String firstName, String lastName) {
+
+	public GymMember(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
-		
+
 	}
 
 	// getters and setters
@@ -54,6 +54,5 @@ public class GymMember {
 	public void setMaxBackSquat(double maxBackSquat) {
 		this.maxBackSquat = maxBackSquat;
 	}
-	
-	
+
 }
